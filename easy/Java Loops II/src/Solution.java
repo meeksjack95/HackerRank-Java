@@ -10,10 +10,9 @@ class Solution{
             int b = in.nextInt();
             int n = in.nextInt();
 
-            int last = 0;
+            int last = a;
             for(int j = 0; j < n; j++){
-                int result = a + (int)Math.pow(2, j) * b;
-                result = result + last;
+                int result = ((int)Math.pow(2, j) * b) + last;
                 last = result;
                 System.out.print(result + " ");
             }
